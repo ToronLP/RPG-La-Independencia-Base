@@ -1,9 +1,14 @@
 /// @description must me placed in every menu
-
 //Place Holder
-if(room = 0)
+
+//Text alignment
+draw_set_halign(fa_center);
+draw_set_valign(fa_center);
+
+//menu Text
+if(room = rm_main_menu)
 {
-	draw_text(obj_menu_arrow.x + 140, obj_menu_arrow.start_y - 8, "New Game" )
-	draw_text(obj_menu_arrow.x + 140, obj_menu_arrow.start_y + 100  - 8, "Options" )
-	draw_text(obj_menu_arrow.x + 140, obj_menu_arrow.start_y + 200 - 8, "Exit" )
+	draw_text(room_width /2, start_y, "New Game" );
+	draw_text(room_width /2, start_y + 100  , "Options" );
+	draw_text(room_width /2, start_y + 200 , "Exit" );
 }

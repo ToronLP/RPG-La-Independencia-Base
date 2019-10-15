@@ -26,7 +26,8 @@ if(keyboard_check_released(vk_up))
 	}
 }
 
-y = start_y + (100 * pos);
+//Move arrow
+obj_menu_arrow.y = start_y + (100 * pos);
 
 
 switch(room)
