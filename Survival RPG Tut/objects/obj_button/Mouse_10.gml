@@ -2,4 +2,4 @@
 // You can write your code in this editor
 
 image_index = 1;
-obj_menu_arrow.pos = button_id;
+obj_menu_controller.pos = button_id;

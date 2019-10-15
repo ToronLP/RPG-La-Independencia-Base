@@ -2,7 +2,6 @@
 // You can write your code in this editor
 
 activate = 0;
-
 button_id = obj_menu_controller.button_id;
 image_speed = 0;
 image_index = 0;
