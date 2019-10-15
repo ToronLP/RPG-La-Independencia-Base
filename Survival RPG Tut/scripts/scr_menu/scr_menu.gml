@@ -1,5 +1,3 @@
-
-
 if(keyboard_check_released(vk_down))
 {
 	if(pos < pos_max)
