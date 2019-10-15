@@ -18,7 +18,6 @@ if(keyboard_check_released(vk_up))
 	if(pos == 0)
 	{
 		pos = pos_max;
-		
 	}
 	else
 	{	
@@ -38,7 +37,7 @@ switch(room)
 				case 0:
 						if(keyboard_check(vk_space )||activate == 1)
 						{
-							room_goto(1);	
+							room_goto(rm_main);	
 						}
 			
 				break;
@@ -46,7 +45,7 @@ switch(room)
 				case 1:
 						if(keyboard_check(vk_space )||activate == 1)
 						{
-							room_goto(2);	
+							room_goto(rm_options);	
 						}
 				break;	
 		
