@@ -1,6 +1,8 @@
-/// @DnDAction : YoYo Games.Common.Execute_Script
-/// @DnDVersion : 1.1
-/// @DnDHash : 472E66BC
-/// @DnDArgument : "script" "scr_inventory"
-/// @DnDSaveInfo : "script" "4282571b-1245-4257-9460-75e4a91b2ad6"
-script_execute(scr_inventory);
+if(keyboard_check_pressed(vk_tab) && inv_active == 0){
+	inv_active = 1;
+} else if(keyboard_check_pressed(vk_tab) && inv_active == 1){
+	inv_active = 0;
+}
+if(inv_active == 1){
+	scr_inventory();
+}

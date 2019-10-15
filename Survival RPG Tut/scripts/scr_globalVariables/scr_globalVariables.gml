@@ -14,8 +14,7 @@ harvestRange = 5;
 pickUpRange = 1;
 image_index = 0;
 image_speed = 0;
-inventory_wood = 0;
-inventory_stone = 0;
+scr_items();
 
 // World
 amount_trees = 10;

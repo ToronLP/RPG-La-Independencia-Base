@@ -11,3 +11,9 @@ script_execute(scr_globalVariables);
 /// @DnDArgument : "script" "scr_worldGeneration"
 /// @DnDSaveInfo : "script" "3cf7bab1-7860-47f9-af1c-e733be43597b"
 script_execute(scr_worldGeneration);
+
+/// @DnDAction : YoYo Games.Common.Execute_Code
+/// @DnDVersion : 1
+/// @DnDHash : 2B6B328E
+/// @DnDArgument : "code" "inv_active=0;"
+inv_active=0;

@@ -34,11 +34,11 @@ if(keyboard_check_released(vk_space) && distance_to_object(nearestWood) < pickUp
 //Pick up Stone
 nearestStone = instance_nearest(x,y,obj_item_stone);
 if(keyboard_check_released(vk_space) && distance_to_object(nearestStone) < pickUpRange){
-	//Destroy Log
+	//Destroy Stone
 	with(nearestStone){
 		instance_destroy();
 	}
-	//Add Log
+	//Add Stone
 	inventory_stone += 1;
 }
 
