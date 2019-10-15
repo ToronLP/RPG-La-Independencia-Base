@@ -4,7 +4,6 @@ activate = 0;
 pos = 0;
 start_y = y;
 
-
 //Menu options count
 switch(room)
 {
