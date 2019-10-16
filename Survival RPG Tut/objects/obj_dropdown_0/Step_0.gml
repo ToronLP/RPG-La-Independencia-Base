@@ -1,9 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(move = 1)
+
+
+#region moves the tiles
+if(move = true)
 {
-	if(reset = 0)
+	if(reset = false)
 	{
 		if(y + 5 < my_destination ) vspeed = 5;
 		else
@@ -14,9 +17,10 @@ if(move = 1)
 	
 		if(my_destination == obj_dropdown_controller.first_id.y)
 		{
-			reset = 1;	
+			reset = true;	
 		}
 	}
+	
 	else
 	{
 		if(y - 5 > my_destination ) vspeed = -5;
@@ -29,11 +33,9 @@ if(move = 1)
 				instance_destroy();
 			}
 		}
-	}
-	
-	
-	
+	}	
 }
+#endregion
 
 
 
