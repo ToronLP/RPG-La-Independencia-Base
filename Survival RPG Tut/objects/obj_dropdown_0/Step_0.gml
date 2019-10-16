@@ -4,26 +4,27 @@
 
 
 #region moves the tiles
-if(move = true)
+if(move == true)
 {
-	if(reset = false)
+	//checks if it should be reseted or deployed
+	if(my_destination == obj_dropdown_controller.first_id.y)
 	{
-		if(y + 5 < my_destination ) vspeed = 5;
+		reset = true;	
+	}
+		
+	//moves to Destination
+	if(reset == false)
+	{
+		if(y + vsp < my_destination ) vspeed = vsp;
 		else
 		{
 			if(y < my_destination) vspeed = 1;
 			else vspeed = 0;
 		}
-	
-		if(my_destination == obj_dropdown_controller.first_id.y)
-		{
-			reset = true;	
-		}
 	}
-	
 	else
 	{
-		if(y - 5 > my_destination ) vspeed = -5;
+		if(y - vsp > my_destination ) vspeed = vsp * (-1);
 		else
 		{
 			if(y > my_destination) vspeed = -1;
@@ -36,6 +37,7 @@ if(move = true)
 	}	
 }
 #endregion
+
 
 
 

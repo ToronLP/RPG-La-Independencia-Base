@@ -18,10 +18,7 @@ if(instance_exists(dropdown_ids[5]))
 		{
 			if(instance_exists(dropdown_ids[i]) && dropdown_ids[i].my_destination == dropdown_ids[i].y )
 			{
-				if(obj_dropdown_controller.dropdown_ids[i].y != first_id.y) 
-				{
 					draw_text(room_width / 2,  dropdown_ids[i].y , Resolutions16by9[i]);	
-				}
 			}
 		}
 	}

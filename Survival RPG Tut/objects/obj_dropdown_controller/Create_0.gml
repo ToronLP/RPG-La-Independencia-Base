@@ -8,7 +8,7 @@ Resolutions16by9[1] = "1600x900";
 Resolutions16by9[2] = "1920x1080";
 Resolutions16by9[3] = "2560x1440";
 Resolutions16by9[4] = "3200x1800";
-Resolutions16by9[5] = "3800*2160";
+Resolutions16by9[5] = "3800x2160";
 
 
 for(i = 0; i < 6; i++)

@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-obj_dropdown_controller.click = 1;
+obj_dropdown_controller.click = true;
 
 

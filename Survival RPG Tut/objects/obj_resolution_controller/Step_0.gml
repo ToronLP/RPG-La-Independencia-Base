@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(id != obj_dropdown_controller.first_id && y == my_destination )
+if(change == true)
 {
-	image_index = 1;
+	window_set_size(windowWidth, windowHeight);
+	change = false;
 }
