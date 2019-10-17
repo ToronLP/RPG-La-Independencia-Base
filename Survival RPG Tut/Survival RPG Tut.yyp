@@ -234,7 +234,7 @@
             "Key": "572ba273-afe8-4078-b52c-245588eefddf",
             "Value": {
                 "id": "cb757dd9-fd77-41c5-8e48-0a19598e59fd",
-                "resourcePath": "scripts\\scr_items\\scr_items.yy",
+                "resourcePath": "scripts\\scr_items_outdated\\scr_items_outdated.yy",
                 "resourceType": "GMScript"
             }
         },
