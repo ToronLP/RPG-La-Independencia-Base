@@ -15,6 +15,7 @@ pickUpRange = 1;
 image_index = 0;
 image_speed = 0;
 scr_Inventory_Matrix();
+StackSize = 64;
 
 // World
 amount_trees = 10;

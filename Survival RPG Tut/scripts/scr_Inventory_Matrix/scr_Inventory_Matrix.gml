@@ -1,5 +1,7 @@
-paddinglr = room_width*.05;
-paddingtb = room_height*.05;
+invWidth = room_width;
+invHeight = room_height;
+paddinglr = invWidth*.05;
+paddingtb = invHeight*.05;
 subframePaddiglr = room_width*.055;
 subframePaddigtb = room_height*.055;
 innerFramePadding = 20;

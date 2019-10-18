@@ -8,7 +8,7 @@ ammount = argument1;
 //Check if item is already in inventory
 for(i = 0; i < array_height_2d(inventoryMatrixItems); i++){
 	for(j = 0; j < array_length_2d(inventoryMatrixItems, i); j++){
-		if(inventoryMatrixItems[i,j]==item){
+		if(inventoryMatrixItems[i,j]==item && inventoryMatrixAmmount[i,j]+ammount<=StackSize){
 			inventoryMatrixAmmount[i,j] += ammount;
 			exit;
 		}

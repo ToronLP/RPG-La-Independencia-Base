@@ -5,21 +5,22 @@ if(keyboard_check(vk_backspace)){
 }
 
 // Movement
-if(keyboard_check(ord("D")) && place_free(x+global.playerMovementSpeed, y)){
-	x += global.playerMovementSpeed;
-	image_index = 1;
+if(inv_active==0){
+	if(keyboard_check(ord("D")) && place_free(x+global.playerMovementSpeed, y)){
+		x += global.playerMovementSpeed;
+		image_index = 1;
+	}
+	if(keyboard_check(ord("A")) && place_free(x-global.playerMovementSpeed, y)){
+		x -= global.playerMovementSpeed;
+		image_index = 0;
+	}
+	if(keyboard_check(ord("S")) && place_free(x, y+global.playerMovementSpeed)){
+		y += global.playerMovementSpeed;
+	}
+	if(keyboard_check(ord("W")) && place_free(x, y-global.playerMovementSpeed)){
+		y -= global.playerMovementSpeed;
+	}
 }
-if(keyboard_check(ord("A")) && place_free(x-global.playerMovementSpeed, y)){
-	x -= global.playerMovementSpeed;
-	image_index = 0;
-}
-if(keyboard_check(ord("S")) && place_free(x, y+global.playerMovementSpeed)){
-	y += global.playerMovementSpeed;
-}
-if(keyboard_check(ord("W")) && place_free(x, y-global.playerMovementSpeed)){
-	y -= global.playerMovementSpeed;
-}
-
 ///PICK UP///
 //Pick up Wood
 nearestWood = instance_nearest(x,y,obj_item_wood);
