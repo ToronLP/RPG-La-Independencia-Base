@@ -43,6 +43,23 @@ for(i = 0; i < rowAmmount; i++){
 								room_width/2+boxWidth*j+boxPadding*j,
 								toInnerFramePaddingtb+boxHeight*i+boxPadding*i,
 								boxWidth,boxHeight);
-		inventoryMatrix[i][j] = array_create(2, "");
+		if(inventoryMatrixItems[i,j]!=""){
+			draw_sprite_stretched(inventoryMatrixItems[i,j],0,
+								room_width/2+boxWidth*j+boxPadding*j+boxWidth*.1,
+								toInnerFramePaddingtb+boxHeight*i+boxPadding*i+boxHeight*.1,
+								boxWidth-(boxWidth*.1)*2,boxHeight-(boxHeight*.1)*2);
+			draw_set_color(c_black);
+			draw_text_transformed(room_width/2+boxWidth*j+boxPadding*j+5,
+								toInnerFramePaddingtb+boxHeight*i+boxPadding*i,
+								string(inventoryMatrixAmmount[i,j]),1,1,0);
+		}
 	}
 }
+/*draw_set_color(c_black);
+for(i = 0; i < rowAmmount; i++){
+	for(j = 0; j < boxesPerRow-.5; j++){
+		inventoryItem = global.inventoryMatrixItems[i,j];
+		inventoryAmmount = global.inventoryMatrixAmmount[i,j];
+		draw_text(toInnerFramePaddinglr+100*j,toInnerFramePaddingtb+50*i,"Item: "+string(inventoryItem)+",\nAmmount: "+string(inventoryAmmount));
+	}
+}*/

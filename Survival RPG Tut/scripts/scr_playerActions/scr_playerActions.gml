@@ -29,7 +29,7 @@ if(keyboard_check_released(vk_space) && distance_to_object(nearestWood) < pickUp
 		instance_destroy();
 	}
 	//Add Log
-	inventory_wood += 1;
+	scr_check_inventory_matrix(spr_log,1);
 }
 //Pick up Stone
 nearestStone = instance_nearest(x,y,obj_item_stone);
@@ -39,7 +39,7 @@ if(keyboard_check_released(vk_space) && distance_to_object(nearestStone) < pickU
 		instance_destroy();
 	}
 	//Add Stone
-	inventory_stone += 1;
+	scr_check_inventory_matrix(spr_stone,1);
 }
 
 ///HARVEST///

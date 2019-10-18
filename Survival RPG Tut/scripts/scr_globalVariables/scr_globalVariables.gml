@@ -14,6 +14,7 @@ harvestRange = 5;
 pickUpRange = 1;
 image_index = 0;
 image_speed = 0;
+scr_Inventory_Matrix();
 
 // World
 amount_trees = 10;
