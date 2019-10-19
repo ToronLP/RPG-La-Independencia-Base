@@ -415,6 +415,14 @@
             }
         },
         {
+            "Key": "ab31f944-6e32-4277-9045-e18ec44109d7",
+            "Value": {
+                "id": "fe4ce138-257b-4865-9f81-b99fb3fe3304",
+                "resourcePath": "sprites\\spr_world_tree_test\\spr_world_tree_test.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ae232b21-5912-4e06-b5e7-6e057e2ca36f",
             "Value": {
                 "id": "a94e8240-76ab-467d-9469-12945caac38f",
