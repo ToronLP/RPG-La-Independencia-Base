@@ -426,7 +426,7 @@
             "Key": "9fa6b195-28da-4da0-9484-eacaeecd4871",
             "Value": {
                 "id": "00abbbac-2b2a-40c2-a540-4196af78f369",
-                "resourcePath": "objects\\obj_main_menu_button\\obj_main_menu_button.yy",
+                "resourcePath": "objects\\obj_return_button\\obj_return_button.yy",
                 "resourceType": "GMObject"
             }
         },

@@ -4,3 +4,4 @@
 save = false;
 player_x = 0;
 player_y = 0;
+Continue = false; 
