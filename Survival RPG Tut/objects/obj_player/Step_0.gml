@@ -1,13 +1,12 @@
-/// @DnDAction : YoYo Games.Common.Execute_Script
-/// @DnDVersion : 1.1
-/// @DnDHash : 1F8FC87F
-/// @DnDArgument : "script" "scr_playerActions"
-/// @DnDSaveInfo : "script" "46144fea-5a95-4643-ac0a-00b5035cd899"
-script_execute(scr_playerActions);
+/// @description Insert description here
+// You can write your code in this editor
 
-/// @DnDAction : YoYo Games.Common.Execute_Script
-/// @DnDVersion : 1.1
-/// @DnDHash : 2F18CA3A
-/// @DnDArgument : "script" "scr_adjustDepth"
-/// @DnDSaveInfo : "script" "c3ae7143-22ca-4e70-9296-556ddff68e75"
-script_execute(scr_adjustDepth);
+scr_adjustDepth();
+scr_playerActions();
+
+if(keyboard_check_released(vk_escape))
+{
+	obj_data_trader.player_x = x;
+	obj_data_trader.player_y = y;
+	room_goto(rm_menu_ingame);
+}

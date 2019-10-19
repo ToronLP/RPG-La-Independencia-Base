@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "8f8ed3a0-2f42-4c77-88fb-743be05c3bba",
+            "Value": {
+                "id": "c42bbf67-8e2a-4e54-b7db-c7c992b19631",
+                "resourcePath": "rooms\\rm_menu_ingame\\rm_menu_ingame.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "9763632d-16ae-42cf-9dfb-72f04dbf6f9b",
             "Value": {
                 "id": "010319b2-571c-4ec1-9725-2462086f711c",
@@ -460,6 +468,14 @@
                 "id": "4178dd84-a98a-4541-9d44-2f76155423f6",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "a93b364f-4749-438d-bd55-597f7c37c519",
+            "Value": {
+                "id": "fda54249-e8ab-4f4e-a55f-c907aedb4322",
+                "resourcePath": "objects\\obj_data_trader\\obj_data_trader.yy",
+                "resourceType": "GMObject"
             }
         },
         {
