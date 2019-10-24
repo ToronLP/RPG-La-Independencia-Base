@@ -4,8 +4,33 @@
 	- Check for lowest ItemType in Inventory
 	- Copy first item in inventory to first free
 */
-itemsArray[0] = "";
-ammountItem[0] = 0;
+itemsArray[0] = "";//array_create(array_height_2d(inventoryMatrixItems)*array_length_2d(inventoryMatrixItems, 0), "");
+ammountItem[0] = 0;//array_create(array_height_2d(inventoryMatrixItems)*array_length_2d(inventoryMatrixItems, 0), 0);
+
+// Durchlaufen der reihen des Inventory
+for(i = 0; i < array_height_2d(inventoryMatrixItems); i++){
+	// Durchlaufen der Spalten des Inventory
+	for(j = 0; j < array_length_2d(inventoryMatrixItems, i); j++){
+		// Durchlaufen der Arrays zum zwischenspeichern der Items
+		for(k = 0; k < array_length_1d(itemsArray); k++){
+			if(inventoryMatrixItems[i,j]!=itemsArray[k]){
+				itemsArray[k] = inventoryMatrixItems[i,j];
+				itemsArray[k+1] = "";
+				ammountItem[k] += inventoryMatrixAmmount[i,j];
+				ammountItem[k+1] = 0;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+/*
 lastStack[0] = 0;
 fullStacks[0] = 0;
 //Get lowest ItemType
@@ -18,6 +43,7 @@ for(i = 0; i < array_height_2d(inventoryMatrixItems); i++){
 			}
 			if(inventoryMatrixItems[i,j]==itemsArray[k]){
 				ammountItem[k] += inventoryMatrixAmmount[i,j];
+				ammountItem[k+1] = 0;
 			}
 		}
 	}
@@ -41,4 +67,4 @@ for(k = 0; k < array_length_1d(itemsArray); k++){
 			}
 		}
 	}
-}
+}*/
