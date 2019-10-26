@@ -55,7 +55,7 @@ img{
     grid-template-columns: 1fr 2fr .5fr;
     grid-template-rows: auto;
     grid-template-areas:
-        "logo content buttons"
+        "logo content buttons";
 }
 
 .main-nav li, .main-nav a, .main-nav button{
@@ -110,14 +110,14 @@ img{
     grid-gap: 20px;
     grid-template-areas:
         'showcase showcase top-box-a'
-        'showcase showcase top-box-b'
+        'showcase showcase top-box-a';
 }
 
 /* Showcase */
 .showcase{
     grid-area: showcase;
     min-height: 400px;
-    background: url(../img/showcase.jpg);
+    background: url(../img/showcase.png);
     background-size: cover;
     background-position: center;
     padding: 3rem;
