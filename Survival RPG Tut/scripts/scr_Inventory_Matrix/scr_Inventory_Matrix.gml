@@ -19,6 +19,6 @@ rowAmmount = ((frame_height-sortBoxHeight-boxPadding)/(boxHeight+boxPadding*2));
 for(i = 0; i < rowAmmount; i++){
 	for(j = 0; j < boxesPerRow-.5; j++){
 		inventoryMatrixItems[i,j] = "";
-		inventoryMatrixAmmount[i,j] = "";
+		inventoryMatrixAmmount[i,j] = 0;
 	}
 }

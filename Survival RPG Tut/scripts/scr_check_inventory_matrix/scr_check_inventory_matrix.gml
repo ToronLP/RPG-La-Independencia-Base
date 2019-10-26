@@ -15,7 +15,7 @@ for(i = 0; i < array_height_2d(inventoryMatrixItems); i++){
 	}
 }
 
-//Pit Item on First free slot
+//Put Item on First free slot
 for(i = 0; i < array_height_2d(inventoryMatrixItems); i++){
 	for(j = 0; j < array_length_2d(inventoryMatrixItems, i); j++){
 		if(inventoryMatrixItems[i,j]==""){
