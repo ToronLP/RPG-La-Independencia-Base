@@ -176,6 +176,9 @@ img{
     text-align: center;
     padding: 1.5rem 2rem;
     box-shadow: var(--shadow);
+    a{
+      color: var(--dark);
+    }
 }
 
 /* Info */
